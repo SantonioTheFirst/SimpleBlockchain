@@ -1,0 +1,2 @@
+pkg_resources==0.0.0
+pycryptodome==3.14.1
