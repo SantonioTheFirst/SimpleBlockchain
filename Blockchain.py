@@ -18,8 +18,10 @@ class Blockchain:
                 {
                     'id': block.id,
                     'creation_time': block.creation_time,
-                    'data': block.data, 'previous_hash': block.previous_hash,
-                    'nonce': block.nonce, 'hash': block.hash
+                    'data': block.data,
+                    'previous_hash': block.previous_hash,
+                    'nonce': block.nonce,
+                    'hash': block.hash
 
                 } for block in self.blockchain
             ], indent=4

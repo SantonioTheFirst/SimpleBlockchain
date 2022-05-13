@@ -17,8 +17,10 @@ class Block:
         return json.dumps({
             'id': self.id,
             'creation_time': self.creation_time,
-            'data': self.data, 'previous_hash': self.previous_hash,
-            'nonce': self.nonce, 'hash': self.hash
+            'data': self.data,
+            'previous_hash': self.previous_hash,
+            'nonce': self.nonce,
+            'hash': self.hash
             }, indent=4)
 
 
@@ -29,7 +31,6 @@ class Block:
         hash.update(str(self.data).encode('utf-8'))
         hash.update(str(self.previous_hash).encode('utf-8'))
         hash.update(str(self.nonce).encode('utf-8'))
-        # hash.update(self.creation_time)
         return hash.hexdigest()
 
 
